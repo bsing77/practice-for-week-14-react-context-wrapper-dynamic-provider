@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { HoroscopeContext } from './context/HoroscopeContext';
+import { HoroScopeProvider } from './context/HoroscopeContext';
 
 const Root = () => {
   return (
-    <HoroscopeContext.Provider value={{ sign: 'Leo' }}>
+    <HoroScopeProvider>
       <App />
-    </HoroscopeContext.Provider>
+    </HoroScopeProvider>
   );
 };
 
